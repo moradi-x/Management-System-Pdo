@@ -94,9 +94,9 @@ If you don't want to use XAMPP/WAMP, you can run the project using PHP's built-i
 http://localhost:8000/LogIn.php
 
 
-```bash
+```
 php -S localhost:8000 
-
+```
 
 ---
 
