@@ -57,9 +57,6 @@ A simple PHP user management system with:
 └── style
     └── style.css
 
-
----
-
 ## Database
 
 The database is created automatically on the first run.
