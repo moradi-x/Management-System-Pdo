@@ -1,135 +1,78 @@
-# User Management System (PHP CRUD + Admin Panel)
+# User Management System
 
-A simple PHP user management system with:
-- Login system with password hashing
-- Admin panel for managing all users
-- Edit, delete, and search users (CRUD)
-- Profile image upload
-- Automatic database creation using PDO & MySQL
-- Session-based error handling and authentication
--  This project is intentionally built without MVC architecture or OOP classes
+This project uses HTML, CSS, MySQL, and PDO, and its purpose is to practice database usage. Object-oriented programming and MVC architecture were not used.
+
+---
+
+## Demo Images
+
+### User Pages
+
+| Login | Info | Edit | Register |
+|-------|------|------|----------|
+| <img src="public/image/login.png" width="120" alt="Login"> | <img src="public/image/info.png" width="120" alt="Info"> | <img src="public/image/edit.png" width="120" alt="Edit"> | <img src="public/image/register.png" width="120" alt="Register"> |
+
+### Admin Pages
+
+| Dashboard | Search | Edit Admin |
+|-----------|--------|------------|
+| <img src="public/image/admin_dashbord.png" width="120" alt="Admin Dashboard"> | <img src="public/image/admin_search.png" width="120" alt="Admin Search"> | <img src="public/image/edit_image.png" width="120" alt="Edit Admin"> |
 
 
 ---
 
-## Features
 
-### User Features
-- Login with hashed password
-- Profile page
-- Upload and update profile image
-- Secure session authentication
+## Installation & Setup
 
-### Admin Features
-- Search users by email
-- Edit user information (username, email, age, password, image)
-- Delete users
-- View all users in a table
-- Auto-remove old profile image on update
-- Email duplication validation
+1. Clone or download the project:
+   ```
+   git clone <PROJECT_URL>
+   Navigate to the project folder and run PHP's built-in server:
+   php -S localhost:8000
+   
+Open your browser and visit:
 
----
+``http://localhost:8000/public/login.php ``
 
-## Project Structure
+## Database connection settings are in these files:
 
+database.php
+delete.php
+select.php
+table.php
+edit.php
+profile_login.php
+
+Default configuration:
 ```
-├── Admin
-│   ├── admin_serch.php
-│   ├── admin.php
-│   ├── delete_admin.php
-│   ├── edit_admin.php
-│   ├── see_admin.php
-│   └── update_admin.php
-├── image_users
-├── model_crud
-│   ├── check.php
-│   ├── database.php
-│   ├── delete.php
-│   ├── insert.php
-│   ├── select.php
-│   ├── table.php
-│   └── update.php
-├── public
-│   ├── edit_profile.php
-│   ├── login.php
-│   ├── profile_login.php
-│   ├── profile_update.php
-│   ├── profile.php
-│   └── Register.php
-└── style
-    └── style.css
+$localhost = "localhost";
+$username = "root";
+$password = "";
+$dbname = "System_Users";
 ```
 
-## Database
-
-The database is created automatically on the first run.
-
-**Database:** System_Users  
-**Table:** users  
-
-Columns:
-- Id  
-- UserName  
-- Email  
-- Password  
-- Age  
-- Image  
-
----
-
-## Installation
-
-1. Download or clone the project  
-2. Put it inside `htdocs` (XAMPP) or `www` (WAMP)  
-3. Start Apache & MySQL  
-4. Open in browser:
-
-```http://localhost/your-project/public/LogIn.php```
-
-Database will be created automatically
-
-or
-
-If you don't want to use XAMPP/WAMP, you can run the project using PHP's built-in development server:Then open in your browser:
-``http://localhost:8000/LogIn.php``
-
-
-```
-php -S localhost:8000 
-```
-
----
+Enter your password in the database password section, and the recommended software is MySQL Workbench.
 
 ## Admin Login
 
-Default admin usernames (hard-coded):
+- To access the admin panel, the admin must first register.
+
+  - Two sample admin users (for testing):
+```
+ Username: mmdmoradi
+
+Username: saramoradi
+```
+-- Password: whatever is set during registration
+
+-- After registration, admin can log in and manage users.
 
 
-mmdmoradi
-saramoradi
+## Project Features
 
-
-Logging in with one of these redirects to the admin panel.
-
----
-
-## Image Upload
-
-- Only JPG format allowed  
-- Image names are hashed using `md5(time())`  
-- Old profile image is deleted after updating  
-
----
-
-## Requirements
-
-- PHP 7.4+
-- MySQL
-- XAMPP / WAMP / Laragon
-- PDO enabled
-
----
-
-## License
-
-Free to use and modify for learning purposes.
+- User registration and login
+- Profile management
+- User information editing
+- Email-based search for admins
+- Automatic database and table creation
+- Secure database operations using **PDO**
