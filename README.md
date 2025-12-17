@@ -16,7 +16,7 @@ This project uses HTML, CSS, MySQL, and PDO, and its purpose is to practice data
 
 | Dashboard | Search | Edit Admin |
 |-----------|--------|------------|
-| <img src="public/image/admin_dashbord.png" width="120" alt="Admin Dashboard"> | <img src="public/image/admin_search.png" width="120" alt="Admin Search"> | <img src="public/image/edit_image.png" width="120" alt="Edit Admin"> |
+| <img src="public/image/admin_dashbord.png" width="120" alt="Admin Dashboard"> | <img src="public/image/admin_search.png" width="120" alt="Admin Search"> | <img src="public/image/edit_admin.png" width="120" alt="Edit Admin"> |
 
 
 ---
