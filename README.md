@@ -84,7 +84,7 @@ Columns:
 3. Start Apache & MySQL  
 4. Open in browser:
 
-http://localhost/your-project/public/LogIn.php
+```http://localhost/your-project/public/LogIn.php```
 
 Database will be created automatically
 
